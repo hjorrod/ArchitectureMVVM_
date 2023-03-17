@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        /*maven {
+            url = "$artifactory_context_url/$artifactory_resolve_repokey"
+            credentials {
+                username = artifactory_username
+                password = artifactory_password
+            }
+        }*/
+    }
+}
+/*dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        //mavenCentral()
+        maven {
+            url = "$artifactory_context_url/$artifactory_resolve_repokey"
+            credentials {
+                username = artifactory_username
+                password = artifactory_password
+            }
+        }
+    }
+}*/
+rootProject.name = "ArchitectureMVVM"
+include ':app'
